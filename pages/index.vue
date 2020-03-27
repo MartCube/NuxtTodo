@@ -99,7 +99,7 @@ export default {
 
 		.list {
 			width: 100%;
-			height: 100%;
+			flex-grow: 1;
 			overflow-y: scroll;
 			overflow-x: hidden;
 		}

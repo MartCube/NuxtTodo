@@ -20,6 +20,14 @@ module.exports = {
 	// Nuxt.js modules
 	modules: ['@nuxtjs/pwa'],
 
+	pwa: {
+		manifest: {
+			name: 'ToDo App',
+			short_name: 'ToDo',
+			description: 'A simply todo app for testing pwa',
+		},
+	},
+
 	// Build configuration
 	build: {
 		// You can extend webpack config here
