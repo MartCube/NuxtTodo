@@ -1,0 +1,64 @@
+@import '~/assets/font.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$text: #343a40;
+$bg1: hsla(0, 0%, 100%, 1);
+$bg2: hsla(223, 13%, 87%, 1);
+
+body {
+	background: linear-gradient(140deg, $bg1, $bg2);
+
+	font-family: 'Avenir';
+	color: $text;
+	h1{
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.6em;
+	}
+
+	input[type='text'],	textarea,
+	select {
+		width: 100%;
+		padding: 10px;
+
+
+		border: 1px solid #e0e0e0;
+		border-radius: 10px;
+		font-family: 'Avenir';
+		font-size: 1em;
+		&:focus {
+			outline: none;
+			box-shadow: (0 0 5px rgba(81, 203, 238, 1));
+			border: 1px solid rgba(81, 203, 238, 1);
+		}
+	}
+
+	
+}
+
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+
+.fade-item-enter-active,
+.fade-item-leave-active {
+	transition: all 0.35s ease;
+}
+.fade-item-enter-active
+{
+	transition-delay: 0.35s;
+}
+.fade-item-enter,
+.fade-item-leave-to {
+	opacity: 0;
+	transform:translateY(50px); 
+}
+
