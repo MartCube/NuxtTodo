@@ -1,4 +1,5 @@
-// The object that holds your data
+// import { vuexfireMutations, firestoreAction } from 'vuexfire'
+
 export const state = () => ({
 	filter: 'all',
 	todoList: [

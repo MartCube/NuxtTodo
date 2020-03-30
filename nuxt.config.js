@@ -18,7 +18,27 @@ module.exports = {
 	//plugins: ['~/plugins/vue-notifications.js'],
 
 	// Nuxt.js modules
-	modules: ['@nuxtjs/pwa'],
+	modules: [
+		'@nuxtjs/pwa',
+		[
+			'@nuxtjs/firebase',
+			{
+				config: {
+					apiKey: 'AIzaSyBNJLThTiacyMzxl3fkSOTWbdqAbHGZsBI',
+					authDomain: 'nuxt-todo-47779.firebaseapp.com',
+					databaseURL: 'https://nuxt-todo-47779.firebaseio.com',
+					projectId: 'nuxt-todo-47779',
+					storageBucket: 'nuxt-todo-47779.appspot.com',
+					messagingSenderId: '932025623931',
+					appId: '1:932025623931:web:8fdd23e69b12274b8f49de',
+					measurementId: 'G-XEGE0Z8107',
+				},
+				services: {
+					firebase: true,
+				},
+			},
+		],
+	],
 
 	pwa: {
 		manifest: {
